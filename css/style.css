@@ -619,6 +619,11 @@ header .container .bars svg {
     padding: 20px;
     color: var(--primary-color);
 }
+@media (max-width: 767px) {
+    .equipo .container .contains .equip .box {
+        margin-bottom: 10px;
+    }
+}
 .equipo .container .contains .equip .box h2 {
     text-transform: uppercase;
 }
@@ -666,34 +671,40 @@ header .container .bars svg {
     display: flex;
     flex-wrap: wrap;
 }
-.contacto .container .form input {
+.contacto .container .form .col {
     flex-basis: 48%;
-    border-radius: 6px;
+    margin-bottom: 20px;
 }
-.contacto .container .form input.num {
-    margin-left: 4%;
+.contacto .container .form .col input {
+    width: 100%;
+    border-radius: 5px;
+}
+.contacto .container .form .col input.num {
+    margin-left: 8%;
 }
 @media (max-width: 991px) {
-    .contacto .container .form input {
+    .contacto .container .form .col {
         flex-basis: 100%;
     }
-    .contacto .container .form input.num  {
+    .contacto .container .form .col input.num  {
         margin-left: 0;
     }
 }
-.contacto .container .form textarea {
+.contacto .container .form .coll {
     flex-basis: 100%;
+}
+.contacto .container .form .coll textarea {
+    width: 100%;
     height: 200px;
 }
-.contacto .container .form input,
-.contacto .container .form textarea {
-    margin-bottom: 20px;
+.contacto .container .form .col input,
+.contacto .container .form .coll textarea {
     padding: 20px;
     font-size: 20px;
     border: none;
 }
-.contacto .container .form input:focus,
-.contacto .container .form textarea:focus {
+.contacto .container .form .col input:focus,
+.contacto .container .form .coll textarea:focus {
     outline: none;
 }
 .contacto .container .form button {
